@@ -32,4 +32,11 @@ public class StatCalculator {
 
         return Double.parseDouble(average);
     }
+
+/*
+Formatter is used to format the output into 6 decimal places
+    formatter can return string value.
+
+    to return the double value of the calculation, the formatted output is then wrapped in Double parser
+*/
 }
