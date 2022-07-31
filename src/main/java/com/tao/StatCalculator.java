@@ -14,6 +14,6 @@ public class StatCalculator {
     }
 
     public static int getSize(int[] arr) {
-        return 6;
+        return arr.length;
     }
 }
