@@ -22,4 +22,12 @@ public class StatCalculatorShould {
         assertEquals(-3, minValue);
     }
 
+    @Test
+    public void giveMaxValueOfArray(){
+
+        int[] arr = {6, 9, 15, -3, 92, 11};
+        int maxValue = StatCalculator.getMaxValue(arr);
+        assertEquals(92, maxValue);
+    }
+
 }

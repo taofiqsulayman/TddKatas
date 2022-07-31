@@ -7,4 +7,8 @@ public class StatCalculator {
         Arrays.sort(arr);
         return arr[0];
     }
+
+    public static int getMaxValue(int[] arr) {
+        return 0;
+    }
 }
