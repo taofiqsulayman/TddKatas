@@ -1,8 +1,7 @@
 package com.tao;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class StatCalculatorShould {
 
@@ -11,7 +10,7 @@ public class StatCalculatorShould {
 
         int[] arr = {6, 9, 15, -2, 92, 11};
         int minValue = StatCalculator.getMinValue(arr);
-        assertEquals(-2, minValue);
+        Assertions.assertEquals(-2, minValue);
     }
 
     @Test
@@ -19,7 +18,7 @@ public class StatCalculatorShould {
 
         int[] arr = {6, 9, 15, -3, 92, 11};
         int minValue = StatCalculator.getMinValue(arr);
-        assertEquals(-3, minValue);
+        Assertions.assertEquals(-3, minValue);
     }
 
     @Test
@@ -27,7 +26,7 @@ public class StatCalculatorShould {
 
         int[] arr = {6, 9, 15, -3, 92, 11};
         int maxValue = StatCalculator.getMaxValue(arr);
-        assertEquals(92, maxValue);
+        Assertions.assertEquals(92, maxValue);
     }
 
 }

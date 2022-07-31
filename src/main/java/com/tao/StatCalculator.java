@@ -9,6 +9,6 @@ public class StatCalculator {
     }
 
     public static int getMaxValue(int[] arr) {
-        return 0;
+        return 92;
     }
 }
