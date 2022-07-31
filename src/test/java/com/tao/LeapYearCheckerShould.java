@@ -15,5 +15,12 @@ public class LeapYearCheckerShould {
         assertEquals(true, checker.isLeapYear(1996));
     }
 
+    @Test
+    public void detectCommonYear(){
+
+        LeapYearChecker checker = new LeapYearChecker();
+        assertEquals(false, checker.isLeapYear(2001));
+    }
+
 
 }
