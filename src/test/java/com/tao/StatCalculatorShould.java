@@ -45,4 +45,12 @@ public class StatCalculatorShould {
         Assertions.assertEquals(6, size);
     }
 
+    @Test
+    public void giveNumberOfElementsInArray2(){
+
+        int[] arr = {6, 9, 15, -3, 92, 11, 12, 1, 3};
+        int size = StatCalculator.getSize(arr);
+        Assertions.assertEquals(9, size);
+    }
+
 }
