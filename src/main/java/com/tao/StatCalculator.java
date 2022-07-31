@@ -1,6 +1,8 @@
 package com.tao;
 
 import java.util.Arrays;
+import java.util.Formatter;
+import java.util.OptionalDouble;
 
 public class StatCalculator {
     public static int getMinValue(int[] arr) {
@@ -18,6 +20,16 @@ public class StatCalculator {
     }
 
     public static double getAverage(int[] arr) {
-        return 21.833333;
+
+        Formatter formatter = new Formatter();
+
+        double sum = 0;
+
+        for (int i = 0; i<arr.length; i++)
+            sum += arr[i];
+
+        double average = sum / arr.length;
+
+        return Double.parseDouble(String.valueOf(formatter.format("%.6f", average)));
     }
 }
