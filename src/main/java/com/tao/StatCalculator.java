@@ -12,4 +12,8 @@ public class StatCalculator {
         Arrays.sort(arr);
         return arr[arr.length-1];
     }
+
+    public static int getSize(int[] arr) {
+        return 0;
+    }
 }

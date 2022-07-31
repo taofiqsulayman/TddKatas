@@ -37,4 +37,12 @@ public class StatCalculatorShould {
         Assertions.assertEquals(90, maxValue);
     }
 
+    @Test
+    public void giveNumberOfElementsInArray(){
+
+        int[] arr = {6, 9, 15, -3, 92, 11};
+        int size = StatCalculator.getSize(arr);
+        Assertions.assertEquals(6, size);
+    }
+
 }
