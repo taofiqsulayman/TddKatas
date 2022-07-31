@@ -35,4 +35,10 @@ public class RomanNumeralsConverterShould {
         String result = RomanNumeralsConverter.toRoman(5);
         assertEquals("V", result);
     }
+
+    @Test
+    public void turn6toRoman(){
+        String result = RomanNumeralsConverter.toRoman(6);
+        assertEquals("VI", result);
+    }
 }
