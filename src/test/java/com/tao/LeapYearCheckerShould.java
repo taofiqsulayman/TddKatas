@@ -2,8 +2,6 @@ package com.tao;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.GregorianCalendar;
-
 import static org.junit.gen5.api.Assertions.assertEquals;
 
 public class LeapYearCheckerShould {
@@ -11,29 +9,25 @@ public class LeapYearCheckerShould {
     @Test
     public void detectLeapYear(){
 
-        LeapYearChecker checker = new LeapYearChecker();
-        assertEquals(true, checker.isLeapYear(1996));
+        assertEquals(true, LeapYearChecker.isLeapYear(1996));
     }
 
     @Test
     public void detectCommonYear(){
 
-        LeapYearChecker checker = new LeapYearChecker();
-        assertEquals(false, checker.isLeapYear(2001));
+        assertEquals(false, LeapYearChecker.isLeapYear(2001));
     }
 
     @Test
     public void detectAtypicalCommonYear(){
 
-        LeapYearChecker checker = new LeapYearChecker();
-        assertEquals(false, checker.isLeapYear(1900));
+        assertEquals(false, LeapYearChecker.isLeapYear(1900));
     }
 
     @Test
     public void detectAtypicalLeapYear(){
 
-        LeapYearChecker checker = new LeapYearChecker();
-        assertEquals(true, checker.isLeapYear(2000));
+        assertEquals(true, LeapYearChecker.isLeapYear(2000));
     }
 
 
