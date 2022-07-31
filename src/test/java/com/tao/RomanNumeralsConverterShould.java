@@ -60,4 +60,10 @@ public class RomanNumeralsConverterShould {
         assertEquals("XI", result);
     }
 
+    @Test
+    public void turn33toRoman(){
+        String result = RomanNumeralsConverter.toRoman(33);
+        assertEquals("XXXIII", result);
+    }
+
 }
