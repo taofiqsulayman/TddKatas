@@ -5,7 +5,10 @@ public class RomanNumeralsConverter {
 
         StringBuilder roman = new StringBuilder();
 
-        if (number >= 5) {
+        if (number == 9){
+            roman.append("IX");
+            number -=9;
+        } else if (number >= 5) {
             roman.append("V");
             number -= 5;
         } else if (number == 4) {
