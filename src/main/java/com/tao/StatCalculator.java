@@ -1,7 +1,10 @@
 package com.tao;
 
+import java.util.Arrays;
+
 public class StatCalculator {
     public static int getMinValue(int[] arr) {
-        return -2;
+        Arrays.sort(arr);
+        return arr[0];
     }
 }
