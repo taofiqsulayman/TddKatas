@@ -5,6 +5,11 @@ public class RomanNumeralsConverter {
 
         StringBuilder roman = new StringBuilder();
 
+        if (number == 10){
+            roman.append("X");
+            number -= 10;
+        }
+
         for (Numeral numeral : Numeral.values()){
             if (number >= numeral.arabic){
                 roman.append(numeral.roman);
