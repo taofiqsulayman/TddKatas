@@ -29,4 +29,10 @@ public class RomanNumeralsConverterShould {
         String result = RomanNumeralsConverter.toRoman(4);
         assertEquals("IV", result);
     }
+
+    @Test
+    public void turn5toRoman(){
+        String result = RomanNumeralsConverter.toRoman(5);
+        assertEquals("V", result);
+    }
 }

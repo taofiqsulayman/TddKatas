@@ -3,15 +3,17 @@ package com.tao;
 public class RomanNumeralsConverter {
     public static String toRoman(int number) {
 
-        String roman = "";
+        StringBuilder roman = new StringBuilder();
 
-        if (number == 4)
-            roman += "IV";
+        if (number == 4) {
+            roman.append("IV");
             number -= 4;
+        }
+
 
         for (int i = 0; i < number; i++)
-            roman += "I";
+            roman.append("I");
 
-        return roman;
+        return roman.toString();
     }
 }
