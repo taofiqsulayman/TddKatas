@@ -24,12 +24,12 @@ public class StatCalculator {
         Formatter formatter = new Formatter();
 
         double sum = 0;
+        double size = getSize(arr);
 
-        for (int i = 0; i<arr.length; i++)
-            sum += arr[i];
+        for (int j : arr) sum += j;
 
-        double average = sum / arr.length;
+        String average = String.valueOf(formatter.format("%.6f", sum / size));
 
-        return Double.parseDouble(String.valueOf(formatter.format("%.6f", average)));
+        return Double.parseDouble(average);
     }
 }
