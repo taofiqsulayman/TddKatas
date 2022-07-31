@@ -5,9 +5,13 @@ public class RomanNumeralsConverter {
 
         StringBuilder roman = new StringBuilder();
 
-        if (number == 10){
+        if (number == 11){
+            roman.append("XI");
+            number -= 11;
+        } else if (number == 10) {
             roman.append("X");
             number -= 10;
+
         }
 
         for (Numeral numeral : Numeral.values()){
