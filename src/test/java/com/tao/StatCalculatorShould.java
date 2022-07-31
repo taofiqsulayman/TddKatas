@@ -53,4 +53,12 @@ public class StatCalculatorShould {
         Assertions.assertEquals(9, size);
     }
 
+    @Test
+    public void giveAverageValueInArray(){
+
+        int[] arr = {6, 9, 15, -3, 92, 11};
+        double average = StatCalculator.getAverage(arr);
+        Assertions.assertEquals(21.833333, average);
+    }
+
 }
