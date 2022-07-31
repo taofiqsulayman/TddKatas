@@ -9,6 +9,7 @@ public class StatCalculator {
     }
 
     public static int getMaxValue(int[] arr) {
-        return 92;
+        Arrays.sort(arr);
+        return arr[arr.length-1];
     }
 }
