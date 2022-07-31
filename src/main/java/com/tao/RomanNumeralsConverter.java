@@ -7,14 +7,12 @@ public class RomanNumeralsConverter {
 
 
         for (Numeral numeral : Numeral.values()){
-            if (number >= numeral.arabic){
+            while (number >= numeral.arabic){
                 roman.append(numeral.roman);
                 number -= numeral.arabic;
             }
         }
 
-        for (int i = 0; i < number; i++)
-            roman.append("I");
 
         return roman.toString();
     }
@@ -24,7 +22,8 @@ public class RomanNumeralsConverter {
         TEN (10, "X"),
         NINE (9, "IX"),
         FIVE (5, "V"),
-        FOUR (4, "IV");
+        FOUR (4, "IV"),
+        ONE (1, "I");
 
         private final int arabic;
         private final String roman;
