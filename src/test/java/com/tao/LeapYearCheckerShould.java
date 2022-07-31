@@ -29,5 +29,12 @@ public class LeapYearCheckerShould {
         assertEquals(false, checker.isLeapYear(1900));
     }
 
+    @Test
+    public void detectAtypicalLeapYear(){
+
+        LeapYearChecker checker = new LeapYearChecker();
+        assertEquals(true, checker.isLeapYear(2000));
+    }
+
 
 }
