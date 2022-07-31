@@ -11,4 +11,10 @@ public class RomanNumeralsConverterShould {
         String result = RomanNumeralsConverter.toRoman(1);
         assertEquals("I", result);
     }
+
+    @Test
+    public void turn2toRoman(){
+        String result = RomanNumeralsConverter.toRoman(2);
+        assertEquals("II", result);
+    }
 }
